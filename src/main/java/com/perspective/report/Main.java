@@ -11,7 +11,7 @@ public class Main {
         ReportExecutor for01TypeReport = new ReportExecutor(1);
         ReportExecutor for02TypeReport = new ReportExecutor(2);
 
-        //Эти последовательно будут выполнятся
+        //Эти никогда параллельно не будут выполнятся
         for01TypeReport.execute(new Type01Report());
         for01TypeReport.execute(new Type01Report());
 
